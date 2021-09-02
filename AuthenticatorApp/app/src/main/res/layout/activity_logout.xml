@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="14dp"
+    android:paddingLeft="14dp"
+    android:paddingBottom="14dp"
+    android:paddingRight="14dp"
+
+    tools:context=".Logout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME TO DASHBOARD"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="#FF9800"
+             />
+
+        <TextView
+            android:id="@+id/email_not_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email is not verified"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#E91E63"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/email_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email is verified"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#E91E63"
+            android:visibility="gone"
+
+            />
+
+        <Button
+            android:id="@+id/verify_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Verify Now"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:background="#FF9800" />
+
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/common_full_open_on_phone" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginTop="7dp"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="update profile"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="#FF9800"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/change_profile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="change profile photo"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="#FF9800"
+            android:layout_marginTop="7dp"/>
+
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:text="LOGOUT"
+            android:textSize="20dp"
+            android:onClick="logout"
+            android:textColor="#fff"
+            android:background="#FF9800"/>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

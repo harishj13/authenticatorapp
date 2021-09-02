@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".EditProfile">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       tools:ignore="MissingConstraints">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="For Updating UserInformation"
+           android:gravity="center"
+           android:textSize="20dp"
+           android:textStyle="bold"/>
+
+       <ImageView
+           android:id="@+id/upadte_image"
+           android:layout_width="125dp"
+           android:layout_height="125dp"
+           android:layout_gravity="center"
+           android:src="@drawable/common_full_open_on_phone"
+           android:layout_marginTop="25dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Enter Your Name"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           />
+
+       <EditText
+           android:id="@+id/upadte_full_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Enter Your Email"
+           android:textStyle="bold"
+           android:layout_marginTop="15dp"
+           />
+
+       <EditText
+           android:id="@+id/upadte_email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Enter Your Phone"
+           android:textStyle="bold"
+           android:layout_marginTop="15dp"
+           />
+
+       <EditText
+           android:id="@+id/upadte_phone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           />
+
+       <Button
+           android:id="@+id/update_info_btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Update information"
+           android:textSize="20dp"
+           android:textColor="#fff"
+           android:background="#FF9800"
+           android:layout_marginTop="20dp"
+           />
+
+
+
+   </LinearLayout>
+
+</RelativeLayout>
